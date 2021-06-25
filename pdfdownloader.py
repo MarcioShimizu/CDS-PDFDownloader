@@ -3,7 +3,7 @@
 import requests
 import os
 import argparse
-
+from tqdm import tqdm
 
 def pdfdownloader(url, endereco):
     
@@ -18,6 +18,8 @@ def pdfdownloader(url, endereco):
             
 
         resp.raise_for_status()
+    else:
+        print('Não Encontrado...')
     
 
 if __name__ == "__main__":
@@ -39,7 +41,7 @@ if __name__ == "__main__":
 
     materia = args.nome
     os.mkdir(f'output/{materia}')
-    for i in numero:
+    for i in tqdm(numero):
         file_name = os.path.join(f'output/{materia}', materia+f' - Unidade {i}.pdf')
         print(f'baixando {materia} - Unidade {i}.pdf ...')
         pdfdownloader(url+i+url2, file_name)
