@@ -7,18 +7,12 @@ Comando pelo terminal:
 ```bash
 mkdir Output
 ```
+Verifique as dependencias para o Script
 
-
-## Rodar o script
-
-Cole o link do PDF e separe onde define o numero do módulo e coloque 
-o nome da matéria no final dentro de parenteses
-
-pdfdownloader.py https://link_ I _arquivo.pdf "nome da materia"
-
+## Rodar o Script
 
 ```bash
-python3 pdfdownloader.py https://link_ I _arquivo.pdf "nome da materia"
+python pdfdownloader.py https://link_I _arquivo.pdf "nome da materia"
 ```
 
-python3 pdfdownloader.py link "nome da materia"
+python pdfdownloader.py link "nome da materia"
