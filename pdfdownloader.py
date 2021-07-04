@@ -4,7 +4,7 @@ import os
 import argparse
 from tqdm import tqdm
 
-def pdfdownloader(url, endereco):
+def pdfdownloader(url, endereco): #baixa os pdsf
     
 
     resp = requests.get(url)
