@@ -48,6 +48,3 @@ def Download(url, name):
             print('Não Encontrado...')
 
     
-if __name__ == '__main__':
-  Download(URL, materia)
-        
