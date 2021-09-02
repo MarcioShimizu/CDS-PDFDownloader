@@ -49,6 +49,13 @@ if __name__ == "__main__":
     parser.add_argument('link1', type=str, help='Primeira parte do link')
     parser.add_argument('nome', type=str, help='nome da materia')
     args = parser.parse_args()
+    print("""
+          
+          
+          
+          
+          
+          """)
     print(f"-------- {args.nome} ---------")
 
     url = args.link1
